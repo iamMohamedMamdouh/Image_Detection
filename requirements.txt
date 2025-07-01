@@ -1,5 +1,5 @@
 streamlit
-ultralytics==8.0.192
+ultralytics>=8.0.0
 numpy
 Pillow
 gTTS
