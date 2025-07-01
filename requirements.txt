@@ -1,7 +1,5 @@
 streamlit
-ultralytics>=8.0.0
-opencv-python-headless
-gtts
-pygame
+ultralytics==8.0.192
 numpy
 Pillow
+gTTS
