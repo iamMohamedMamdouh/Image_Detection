@@ -1,7 +1,7 @@
 streamlit
-ultralytics
-opencv-python
-numpy
-Pillow
-gtts
+ultralytics>=8.0.0
+opencv-python-headless
 pygame
+gtts
+Pillow
+numpy
