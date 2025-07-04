@@ -46,9 +46,12 @@ if uploaded_file:
     class_names = result.names
 
     st.subheader("Detected Image:")
-    detected_array = result.plot()
-
-    detected_image = Image.fromarray(detected_array)
+    
+    img_np = result.plot()
+    if isinstance(img_np, np.ndarray):
+        detected_image = Image.fromarray(img_np)
+    else:
+        detected_image = img_np  
     st.image(detected_image, caption="✅ Detected", use_container_width=True)
 
     detected_labels = [class_names[int(cls)] for *_, cls in boxes.tolist()]
